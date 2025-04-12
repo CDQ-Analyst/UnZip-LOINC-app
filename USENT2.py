@@ -110,6 +110,7 @@ if df is not None:
 
             if extracted_files:
                 progress.progress(1.0, text="✅ Extraction complete!")
+                st.title("_Unzip and Extrac is Completed_ :sunglasses:")
                 st.success(f"✅ Extracted {len(extracted_files)} matching file(s) to '{UNZIP_DIR}' folder.")
 #                 st.write(extracted_files)
                 st.info(f"🕒 Time taken: {time_taken:.3f} seconds")
