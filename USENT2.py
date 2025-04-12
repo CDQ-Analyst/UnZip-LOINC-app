@@ -11,6 +11,7 @@ os.makedirs(UNZIP_DIR, exist_ok=True)
 
 # Title & Sidebar
 st.sidebar.header('Unzip Summary of Episode Note (USENT)')
+st.header('Unzip Summary of Episode Note (USENT)')
 
 # Upload Meta File
 uploaded_file = st.sidebar.file_uploader("Choose a Meta File", type=['csv'])
