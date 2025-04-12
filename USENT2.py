@@ -23,7 +23,7 @@ file_names = []  # Placeholder for file names
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     st.header("Meta File Data")
-    st.title("_Data Upload Completed_ :sunglasses:")
+    # st.title("_Data Upload Completed_ :sunglasses:")
     st.text(f'Data Frame Shape : {df.shape}')
     st.write(df.head())
 
