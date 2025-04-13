@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - UsentDash
+name: Build and deploy Python app to Azure Web App - usentdash
 
 on:
   push:
@@ -68,14 +68,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_51BFD51E8AC24C9FB8776A06FF798630 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_DCCF8213AF6B4159996D559D5FD49537 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_B7F02A75204540BF8F14C457AFDCE2DC }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_103314D477CA48A28707C46D84F08699 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_93E8C14D246C4001B4EE0DC1DE43B772 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_9E871F94270C40B78D69B9DC5BEBE753 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'UsentDash'
+          app-name: 'usentdash'
           slot-name: 'Production'
           
